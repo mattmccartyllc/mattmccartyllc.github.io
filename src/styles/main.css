@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "hurme-geometric-sans-1-regular";
+  src: url("../../fonts/hurme/HurmeGeometricSans1-Regular.woff") format('woff');
+}
+
+*,
+*:before,
+*:after {
+          box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+body {
+   overflow: hidden;
+}
+
+html, body {
+  min-width       : 100vw;
+  min-height      : 100vh;
+  padding         : 0;
+  margin          : 0;
+  background-color: #1a1a1a;
+  color           : #ffffff;
+  font-family     : 'hurme-geometric-sans-1-regular';
+  font-size       : 14px;
+}
+
+body > #page {
+  display       : flex;
+  flex-direction: row;
+  width         : 100vw;
+  height        : 100vh;
+  max-width     : 2000px;
+  color         : #cfcfcf;
+
+  margin-left   : auto;
+  margin-right  : auto;
+}
+
+body .container {
+  padding: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color          : #cfcfcf;
+  text-decoration: none;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding        : 0;
+  margin         : 0;
+}
+
+/** General helper classes */
+.d-flex {
+  display: flex;
+}
+
+.d-flex.jc-c {
+  justify-content: center;
+}
+
+.d-flex.jc-sb {
+  justify-content: space-between;
+}
+
+.d-flex.jc-r {
+  justify-content: right;
+}
+
+.d-flex.v-center {
+  align-items: center;
+}
+
+/** Media query classes */
+.s-mobile {
+  display: block;
+}
+
+.s-mobile.d-flex,
+.s-mobile-f {
+  display: flex;
+}
+
+.sx-mobile,
+.sx-mobile.d-flex,
+.sx-mobile-f {
+  display: none;
+}
+
+.s-tablet,
+.s-normal,
+.s-laptop,
+.s-large,
+.s-l,
+.s-xl,
+.s-xlarge {
+  display: none;
+}
+
+aside {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  align-items    : flex-end;
+  height         : 100vh;
+  min-width      : 100px;
+}
+
+aside > div,
+aside > label {
+
+}
+
+aside > label {
+  height         : 58px;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  border-image    : linear-gradient(to right, #1a1a1a, #af8945) 1;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+aside > div + label,
+aside > label + label {
+  justify-content: space-between;
+  padding-left   : 20px;
+  border-image   : linear-gradient(to left, #1a1a1a, #af8945) 1;
+  border-width   : 1px 0 0 0;
+}
+
+aside > div,
+aside > label,
+aside > nav.v {
+  width: 100%;
+}
+
+aside > div > div {
+  width  : 58px;
+  height : 210px;
+  border-image: linear-gradient(to top, #1a1a1a, #af8945) 24;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+}
+
+aside > div > div > label.rotate-n90 {
+  display     : block;
+  transform   : rotate(-180deg);
+  writing-mode: vertical-rl;
+  position    : relative;
+  top         : 20px;
+  left        : 20px;
+}
+
+aside > nav.v {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-end;
+  min-height     : 210px;
+}
+
+aside > nav.v > ul {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-evenly;
+  width          : 58px;
+  height         : 100%;
+
+  border-image: linear-gradient(to bottom, #1a1a1a, #af8945) 24;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+}
+
+aside > nav.v > ul > li {
+  text-align: center;
+  font-size: x-large;
+}
+
+aside > nav.v > ul > li > i:hover {
+  cursor: pointer;
+}
+
+aside > nav.v > ul > li i.fa-linkedin:hover {
+  color: #0063C2;
+
+}
+
+aside > nav.v > ul > li i.fa-twitter:hover {
+  color: #1c96e8;
+}
+
+section {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  height         : 100%;
+  width          : 100%;
+}
+
+section p {
+  text-align : center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+}
+
+aside + section + aside > label {
+  width: max-content;
+  padding-right: 20px;
+}
+
