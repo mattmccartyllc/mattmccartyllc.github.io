@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "hurme-geometric-sans-1-regular";
+  src: url("../../fonts/hurme/HurmeGeometricSans1-Regular.woff") format('woff');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  overflow-y: auto;
+  /*ooverflow-y: scroll;*/
+}
+
+body {
+   overflow: auto;
+}
+
+html, body {
+  min-width       : 100vw;
+  min-height      : 100vh;
+  padding         : 0;
+  margin          : 0;
+  background-color: #1a1a1a;
+  color           : #ffffff;
+  font-family     : 'hurme-geometric-sans-1-regular';
+  font-size       : 14px;
+
+  /* Try to fix jagged Google fonts */
+  /*-webkit-font-smoothing: antialiased;
+  -webkit-filter        : blur(0.000001px);
+  text-shadow           : 1px 1px 1px rgba(0,0,0,0.004);*/
+}
+
+body > #page {
+  display: flex;
+  width : 100vw;
+  height: 100vh;
+  color : #cfcfcf
+}
+
+body .container {
+  padding: 20px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color          : #cfcfcf;
+  text-decoration: none;
+}
+
+/** General helper classes */
+.d-flex {
+  display: flex;
+}
+
+.d-flex.jc-c {
+  justify-content: center;
+}
+
+.d-flex.jc-sb {
+  justify-content: space-between;
+}
+
+.d-flex.jc-r {
+  justify-content: right;
+}
+
+.d-flex.v-center {
+  align-items: center;
+}
+
+/** Media query classes */
+.s-mobile {
+  display: block;
+}
+
+.s-mobile.d-flex,
+.s-mobile-f {
+  display: flex;
+}
+
+.sx-mobile,
+.sx-mobile.d-flex,
+.sx-mobile-f {
+  display: none;
+}
+
+.s-tablet,
+.s-normal,
+.s-laptop,
+.s-large,
+.s-l,
+.s-xl,
+.s-xlarge {
+  display: none;
+}
+
+aside {
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  height          : 100%;
+}
+
+aside .label {
+  min-height      : 210px;
+  text-orientation: revert;
+  text-align      : center;
+  writing-mode    : vertical-rl;
+  transform       : rotate(-180deg);
+  border-image    : linear-gradient(#1a1a1a, #af8945) 24;
+  border-width    : 0 0 0 1px;
+  border-style    : solid;
+}
+
+aside .label + .label {
+  transform   : rotate(-90deg);
+  position    : relative;
+  left        : 75px;
+  bottom      : -75px;
+  border-image: linear-gradient(#af8945, #1a1a1a) 24;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+}
+
+aside + section {
+  display        : flex;
+  width          : 100%;
+  height         : 100%;
+  justify-content: center;
+  align-items    : center;
+  padding        : 0;
+}
+
+aside + section > .container > p {
+  text-align: center;
+}
+
+section + aside {
+  height          : 100%;
+  width           : 57px;
+}
+
+section + aside .label {
+  max-height      : 58px;
+  position:relative;
+  right     : 77px;
+  bottom    : 76px;
+  transform   : rotate(-90deg);
+
+  border-image: linear-gradient(#1a1a1a, #af8945) 24;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+}
