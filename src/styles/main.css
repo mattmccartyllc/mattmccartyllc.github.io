@@ -48,18 +48,17 @@ body .container {
   padding: 20px;
 }
 
-/* IOS hover fix */
-@media (hover: hover) and (pointer: fine) {
-  a:link,
-  a:visited,
-  a:hover,
-  a:active,
-  a:focus,
-  i:focus,
-  i:active {
-    color          : #cfcfcf;
-    text-decoration: none;
-  }
+
+a, i,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+i:focus,
+i:active {
+  color          : #cfcfcf;
+  text-decoration: none;
 }
 
 nav > ul {
