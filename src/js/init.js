@@ -3,10 +3,5 @@ window.addEventListener("beforeunload", function(event) {
 });
 
 window.addEventListener('load', function () {
-    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-    if (!isIE11) {
-        sal();
-    } else {
-        document.body.style.height = window.innerHeight + "px";
-    }
+    sal();
 });
