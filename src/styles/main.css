@@ -48,12 +48,18 @@ body .container {
   padding: 20px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color          : #cfcfcf;
-  text-decoration: none;
+/* IOS hover fix */
+@media (hover: hover) and (pointer: fine) {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus,
+  i:focus,
+  i:active {
+    color          : #cfcfcf;
+    text-decoration: none;
+  }
 }
 
 nav > ul {
@@ -137,17 +143,20 @@ aside > nav.v > ul > li {
   font-size: x-large;
 }
 
-aside > nav.v > ul > li > i:hover {
-  cursor: pointer;
-}
+/* IOS hover fix */
+@media (hover: hover) and (pointer: fine) {
+  aside > nav.v > ul > li > i:hover {
+    cursor: pointer;
+  }
 
-aside > nav.v > ul > li i.fa-linkedin:hover {
-  color: #0063C2;
+  aside > nav.v > ul > li i.fa-linkedin:hover {
+    color: #0063C2;
 
-}
+  }
 
-aside > nav.v > ul > li i.fa-twitter:hover {
-  color: #1c96e8;
+  aside > nav.v > ul > li i.fa-twitter:hover {
+    color: #1c96e8;
+  }
 }
 
 section {
