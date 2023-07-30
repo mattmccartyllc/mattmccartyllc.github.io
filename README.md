@@ -6,7 +6,7 @@
     Matt McCarty LLC
 </h1>
 
-This is the private repository containing the website, code, and assets for Matt McCarty LLC located at [https://mattmccarty.net](https://mattmccarty.net).
+This repository contains the website, code, and assets for Matt McCarty LLC located at [https://mattmccarty.net](https://mattmccarty.net).
 
 <p align="center">
     <a href='https://www.linkedin.com/company/matt-mccarty-llc/'>
